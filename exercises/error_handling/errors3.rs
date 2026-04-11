@@ -22,7 +22,7 @@ fn main() {
     }
 }
 
-pub fn total_cost(item_quantity: &str) -> Result<i32, ParseIntError> {
+pub fn total_cost(item_quantity: &str) -> Result<(), ParseIntError> {
     let processing_fee = 1;
     let cost_per_item = 5;
     let qty = item_quantity.parse::<i32>()?;
